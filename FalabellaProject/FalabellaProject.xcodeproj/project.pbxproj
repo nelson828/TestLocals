@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47F5A77943AFBA92507875F2 /* Pods_FalabellaProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F67E42DB1F4BA8CD34CCE /* Pods_FalabellaProject.framework */; };
+		52663E6422D2708800D08990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663E6322D2708800D08990 /* AppDelegate.swift */; };
+		52663E6B22D2708900D08990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52663E6A22D2708900D08990 /* Assets.xcassets */; };
+		52663E6E22D2708900D08990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52663E6C22D2708900D08990 /* LaunchScreen.storyboard */; };
+		52663E8822D2745B00D08990 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663E8622D2745B00D08990 /* LoginViewController.swift */; };
+		52663E8922D2745B00D08990 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52663E8722D2745B00D08990 /* LoginViewController.xib */; };
+		52663E8C22D278DE00D08990 /* LocalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663E8B22D278DE00D08990 /* LocalsViewController.swift */; };
+		52663E9022D27A7800D08990 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663E8F22D27A7800D08990 /* ViewControllerFactory.swift */; };
+		52663E9322D27CF000D08990 /* ViewFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663E9222D27CF000D08990 /* ViewFactoryType.swift */; };
+		52663E9522D27DE900D08990 /* LocalsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663E9422D27DE900D08990 /* LocalsDataSource.swift */; };
+		52663E9722D27DF200D08990 /* LocalsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663E9622D27DF200D08990 /* LocalsDelegate.swift */; };
+		52663EA022D282B400D08990 /* LocalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663E9F22D282B400D08990 /* LocalModel.swift */; };
+		52663EA222D286B500D08990 /* LocalsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EA122D286B500D08990 /* LocalsPresenter.swift */; };
+		52663EA422D286DE00D08990 /* LocalsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EA322D286DE00D08990 /* LocalsPresenterProtocol.swift */; };
+		52663EA622D2877E00D08990 /* ListLocalsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EA522D2877E00D08990 /* ListLocalsUseCase.swift */; };
+		52663EA922D2882900D08990 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EA822D2882900D08990 /* ErrorModel.swift */; };
+		52663EAB22D28B4C00D08990 /* LocalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EAA22D28B4C00D08990 /* LocalsView.swift */; };
+		52663EAE22D298A700D08990 /* LocalRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EAD22D298A700D08990 /* LocalRestApi.swift */; };
+		52663EB022D2994E00D08990 /* LocalAlamofireRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EAF22D2994E00D08990 /* LocalAlamofireRestApi.swift */; };
+		52663EB222D29C1100D08990 /* LocalServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EB122D29C1100D08990 /* LocalServiceLocator.swift */; };
+		52663EB422D2AA3500D08990 /* LocalInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EB322D2AA3500D08990 /* LocalInformationCell.swift */; };
+		52663EB622D2D94200D08990 /* FilterLocalsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EB522D2D94200D08990 /* FilterLocalsUseCase.swift */; };
+		52663EBC22D2E60400D08990 /* DetailLocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EBA22D2E60400D08990 /* DetailLocalViewController.swift */; };
+		52663EBD22D2E60400D08990 /* DetailLocalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52663EBB22D2E60400D08990 /* DetailLocalViewController.xib */; };
+		52663EC222D2F2FA00D08990 /* LocalsDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EC122D2F2FA00D08990 /* LocalsDataSourceTests.swift */; };
+		52663EC422D2F8B400D08990 /* LocalsDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EC322D2F8B400D08990 /* LocalsDelegateTests.swift */; };
+		52663EC622D2FAE900D08990 /* LocalsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EC522D2FAE900D08990 /* LocalsPresenterTests.swift */; };
+		52663EC922D2FB5300D08990 /* LocalsViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663EC822D2FB5300D08990 /* LocalsViewMock.swift */; };
+		52663ECC22D2FC1D00D08990 /* LocalRestApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663ECB22D2FC1D00D08990 /* LocalRestApiMock.swift */; };
+		52663ED122D3028C00D08990 /* ListLocalsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663ED022D3028C00D08990 /* ListLocalsUseCaseTests.swift */; };
+		52663ED322D3041100D08990 /* FilterLocalsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663ED222D3041100D08990 /* FilterLocalsUseCaseTests.swift */; };
+		52663ED622D3049B00D08990 /* LocalInformationCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52663ED522D3049B00D08990 /* LocalInformationCellTests.swift */; };
+		C7D7306CCAA68551395DDA29 /* Pods_FalabellaProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444E803683E121DC37FA9A83 /* Pods_FalabellaProjectTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52663E7522D2708900D08990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52663E5822D2708800D08990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52663E5F22D2708800D08990;
+			remoteInfo = FalabellaProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FCACD01C29F67A7B6756790 /* Pods-FalabellaProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FalabellaProject/Pods-FalabellaProject.release.xcconfig"; sourceTree = "<group>"; };
+		272F67E42DB1F4BA8CD34CCE /* Pods_FalabellaProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		444E803683E121DC37FA9A83 /* Pods_FalabellaProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52663E6022D2708800D08990 /* FalabellaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FalabellaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52663E6322D2708800D08990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52663E6A22D2708900D08990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52663E6D22D2708900D08990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52663E6F22D2708900D08990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52663E7422D2708900D08990 /* FalabellaProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FalabellaProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52663E7A22D2708900D08990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52663E8622D2745B00D08990 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		52663E8722D2745B00D08990 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		52663E8B22D278DE00D08990 /* LocalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsViewController.swift; sourceTree = "<group>"; };
+		52663E8F22D27A7800D08990 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		52663E9222D27CF000D08990 /* ViewFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactoryType.swift; sourceTree = "<group>"; };
+		52663E9422D27DE900D08990 /* LocalsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsDataSource.swift; sourceTree = "<group>"; };
+		52663E9622D27DF200D08990 /* LocalsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsDelegate.swift; sourceTree = "<group>"; };
+		52663E9F22D282B400D08990 /* LocalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalModel.swift; sourceTree = "<group>"; };
+		52663EA122D286B500D08990 /* LocalsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsPresenter.swift; sourceTree = "<group>"; };
+		52663EA322D286DE00D08990 /* LocalsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsPresenterProtocol.swift; sourceTree = "<group>"; };
+		52663EA522D2877E00D08990 /* ListLocalsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLocalsUseCase.swift; sourceTree = "<group>"; };
+		52663EA822D2882900D08990 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		52663EAA22D28B4C00D08990 /* LocalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsView.swift; sourceTree = "<group>"; };
+		52663EAD22D298A700D08990 /* LocalRestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRestApi.swift; sourceTree = "<group>"; };
+		52663EAF22D2994E00D08990 /* LocalAlamofireRestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAlamofireRestApi.swift; sourceTree = "<group>"; };
+		52663EB122D29C1100D08990 /* LocalServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalServiceLocator.swift; sourceTree = "<group>"; };
+		52663EB322D2AA3500D08990 /* LocalInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalInformationCell.swift; sourceTree = "<group>"; };
+		52663EB522D2D94200D08990 /* FilterLocalsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterLocalsUseCase.swift; sourceTree = "<group>"; };
+		52663EBA22D2E60400D08990 /* DetailLocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLocalViewController.swift; sourceTree = "<group>"; };
+		52663EBB22D2E60400D08990 /* DetailLocalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailLocalViewController.xib; sourceTree = "<group>"; };
+		52663EC122D2F2FA00D08990 /* LocalsDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsDataSourceTests.swift; sourceTree = "<group>"; };
+		52663EC322D2F8B400D08990 /* LocalsDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsDelegateTests.swift; sourceTree = "<group>"; };
+		52663EC522D2FAE900D08990 /* LocalsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsPresenterTests.swift; sourceTree = "<group>"; };
+		52663EC822D2FB5300D08990 /* LocalsViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalsViewMock.swift; sourceTree = "<group>"; };
+		52663ECB22D2FC1D00D08990 /* LocalRestApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRestApiMock.swift; sourceTree = "<group>"; };
+		52663ED022D3028C00D08990 /* ListLocalsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLocalsUseCaseTests.swift; sourceTree = "<group>"; };
+		52663ED222D3041100D08990 /* FilterLocalsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterLocalsUseCaseTests.swift; sourceTree = "<group>"; };
+		52663ED522D3049B00D08990 /* LocalInformationCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalInformationCellTests.swift; sourceTree = "<group>"; };
+		A97A950C4A845D8F96EFC428 /* Pods-FalabellaProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FalabellaProject/Pods-FalabellaProject.debug.xcconfig"; sourceTree = "<group>"; };
+		C3B40A8B99F2C08AA6F2BA00 /* Pods-FalabellaProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FalabellaProjectTests/Pods-FalabellaProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F68BB71A59D5954DE3DC5095 /* Pods-FalabellaProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FalabellaProjectTests/Pods-FalabellaProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52663E5D22D2708800D08990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F5A77943AFBA92507875F2 /* Pods_FalabellaProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52663E7122D2708900D08990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D7306CCAA68551395DDA29 /* Pods_FalabellaProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52663E5722D2708800D08990 = {
+			isa = PBXGroup;
+			children = (
+				52663E6222D2708800D08990 /* FalabellaProject */,
+				52663E7722D2708900D08990 /* FalabellaProjectTests */,
+				52663E6122D2708800D08990 /* Products */,
+				A51B41271AFBF0F0CE856A18 /* Pods */,
+				B07CD7CFC136B67D6EAC8220 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52663E6122D2708800D08990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52663E6022D2708800D08990 /* FalabellaProject.app */,
+				52663E7422D2708900D08990 /* FalabellaProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52663E6222D2708800D08990 /* FalabellaProject */ = {
+			isa = PBXGroup;
+			children = (
+				52663E8E22D27A6A00D08990 /* Core */,
+				52663E8A22D2785E00D08990 /* Locals */,
+				52663E8422D271D800D08990 /* Login */,
+				52663E8322D270D200D08990 /* Application Delegate */,
+				52663E8522D272F500D08990 /* Supporting */,
+			);
+			path = FalabellaProject;
+			sourceTree = "<group>";
+		};
+		52663E7722D2708900D08990 /* FalabellaProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				52663EBE22D2F2A900D08990 /* Locals */,
+				52663E7A22D2708900D08990 /* Info.plist */,
+			);
+			path = FalabellaProjectTests;
+			sourceTree = "<group>";
+		};
+		52663E8322D270D200D08990 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				52663E6322D2708800D08990 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		52663E8422D271D800D08990 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				52663E9922D2820700D08990 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		52663E8522D272F500D08990 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				52663E6A22D2708900D08990 /* Assets.xcassets */,
+				52663E6C22D2708900D08990 /* LaunchScreen.storyboard */,
+				52663E6F22D2708900D08990 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		52663E8A22D2785E00D08990 /* Locals */ = {
+			isa = PBXGroup;
+			children = (
+				52663E9C22D2827800D08990 /* Data */,
+				52663E9B22D2827500D08990 /* DI */,
+				52663E9A22D2827300D08990 /* Domain */,
+				52663E9822D281FE00D08990 /* View */,
+			);
+			path = Locals;
+			sourceTree = "<group>";
+		};
+		52663E8D22D278E800D08990 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				52663EB322D2AA3500D08990 /* LocalInformationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		52663E8E22D27A6A00D08990 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				52663EA722D2881E00D08990 /* Model */,
+				52663E9122D27CDF00D08990 /* Factory */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		52663E9122D27CDF00D08990 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				52663E8F22D27A7800D08990 /* ViewControllerFactory.swift */,
+				52663E9222D27CF000D08990 /* ViewFactoryType.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		52663E9822D281FE00D08990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52663EB822D2E5D000D08990 /* ListLocals */,
+				52663EB922D2E5DF00D08990 /* DetailLocal */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52663E9922D2820700D08990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52663E8622D2745B00D08990 /* LoginViewController.swift */,
+				52663E8722D2745B00D08990 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52663E9A22D2827300D08990 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				52663E9D22D2829800D08990 /* UseCase */,
+				52663E9E22D2829D00D08990 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		52663E9B22D2827500D08990 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				52663EB122D29C1100D08990 /* LocalServiceLocator.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		52663E9C22D2827800D08990 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				52663EAC22D296D100D08990 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		52663E9D22D2829800D08990 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				52663EA522D2877E00D08990 /* ListLocalsUseCase.swift */,
+				52663EB522D2D94200D08990 /* FilterLocalsUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		52663E9E22D2829D00D08990 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52663E9F22D282B400D08990 /* LocalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52663EA722D2881E00D08990 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52663EA822D2882900D08990 /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52663EAC22D296D100D08990 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				52663EAD22D298A700D08990 /* LocalRestApi.swift */,
+				52663EAF22D2994E00D08990 /* LocalAlamofireRestApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		52663EB822D2E5D000D08990 /* ListLocals */ = {
+			isa = PBXGroup;
+			children = (
+				52663E8D22D278E800D08990 /* Cells */,
+				52663E8B22D278DE00D08990 /* LocalsViewController.swift */,
+				52663E9422D27DE900D08990 /* LocalsDataSource.swift */,
+				52663E9622D27DF200D08990 /* LocalsDelegate.swift */,
+				52663EA122D286B500D08990 /* LocalsPresenter.swift */,
+				52663EA322D286DE00D08990 /* LocalsPresenterProtocol.swift */,
+				52663EAA22D28B4C00D08990 /* LocalsView.swift */,
+			);
+			path = ListLocals;
+			sourceTree = "<group>";
+		};
+		52663EB922D2E5DF00D08990 /* DetailLocal */ = {
+			isa = PBXGroup;
+			children = (
+				52663EBA22D2E60400D08990 /* DetailLocalViewController.swift */,
+				52663EBB22D2E60400D08990 /* DetailLocalViewController.xib */,
+			);
+			path = DetailLocal;
+			sourceTree = "<group>";
+		};
+		52663EBE22D2F2A900D08990 /* Locals */ = {
+			isa = PBXGroup;
+			children = (
+				52663ECF22D3027800D08990 /* Domain */,
+				52663ECD22D3023900D08990 /* Data */,
+				52663ECA22D2FC0200D08990 /* Mock */,
+				52663EBF22D2F2AF00D08990 /* View */,
+			);
+			path = Locals;
+			sourceTree = "<group>";
+		};
+		52663EBF22D2F2AF00D08990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52663EC022D2F2B800D08990 /* ListLocals */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52663EC022D2F2B800D08990 /* ListLocals */ = {
+			isa = PBXGroup;
+			children = (
+				52663ED422D3048900D08990 /* Cell */,
+				52663EC722D2FB4500D08990 /* Mocks */,
+				52663EC122D2F2FA00D08990 /* LocalsDataSourceTests.swift */,
+				52663EC322D2F8B400D08990 /* LocalsDelegateTests.swift */,
+				52663EC522D2FAE900D08990 /* LocalsPresenterTests.swift */,
+			);
+			path = ListLocals;
+			sourceTree = "<group>";
+		};
+		52663EC722D2FB4500D08990 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				52663EC822D2FB5300D08990 /* LocalsViewMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		52663ECA22D2FC0200D08990 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				52663ECB22D2FC1D00D08990 /* LocalRestApiMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		52663ECD22D3023900D08990 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				52663ECE22D3023F00D08990 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		52663ECE22D3023F00D08990 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		52663ECF22D3027800D08990 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				52663ED022D3028C00D08990 /* ListLocalsUseCaseTests.swift */,
+				52663ED222D3041100D08990 /* FilterLocalsUseCaseTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		52663ED422D3048900D08990 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				52663ED522D3049B00D08990 /* LocalInformationCellTests.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A51B41271AFBF0F0CE856A18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A97A950C4A845D8F96EFC428 /* Pods-FalabellaProject.debug.xcconfig */,
+				1FCACD01C29F67A7B6756790 /* Pods-FalabellaProject.release.xcconfig */,
+				C3B40A8B99F2C08AA6F2BA00 /* Pods-FalabellaProjectTests.debug.xcconfig */,
+				F68BB71A59D5954DE3DC5095 /* Pods-FalabellaProjectTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B07CD7CFC136B67D6EAC8220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				272F67E42DB1F4BA8CD34CCE /* Pods_FalabellaProject.framework */,
+				444E803683E121DC37FA9A83 /* Pods_FalabellaProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52663E5F22D2708800D08990 /* FalabellaProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52663E7D22D2708900D08990 /* Build configuration list for PBXNativeTarget "FalabellaProject" */;
+			buildPhases = (
+				26B1E61E7A7E445798650B3B /* [CP] Check Pods Manifest.lock */,
+				52663E5C22D2708800D08990 /* Sources */,
+				52663E5D22D2708800D08990 /* Frameworks */,
+				52663E5E22D2708800D08990 /* Resources */,
+				5EEBB2F21FA6997E08461B88 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FalabellaProject;
+			productName = FalabellaProject;
+			productReference = 52663E6022D2708800D08990 /* FalabellaProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52663E7322D2708900D08990 /* FalabellaProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52663E8022D2708900D08990 /* Build configuration list for PBXNativeTarget "FalabellaProjectTests" */;
+			buildPhases = (
+				323B0E56DEE53DA2E0A4BF0C /* [CP] Check Pods Manifest.lock */,
+				52663E7022D2708900D08990 /* Sources */,
+				52663E7122D2708900D08990 /* Frameworks */,
+				52663E7222D2708900D08990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52663E7622D2708900D08990 /* PBXTargetDependency */,
+			);
+			name = FalabellaProjectTests;
+			productName = FalabellaProjectTests;
+			productReference = 52663E7422D2708900D08990 /* FalabellaProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52663E5822D2708800D08990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Nelson;
+				TargetAttributes = {
+					52663E5F22D2708800D08990 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					52663E7322D2708900D08990 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 52663E5F22D2708800D08990;
+					};
+				};
+			};
+			buildConfigurationList = 52663E5B22D2708800D08990 /* Build configuration list for PBXProject "FalabellaProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52663E5722D2708800D08990;
+			productRefGroup = 52663E6122D2708800D08990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52663E5F22D2708800D08990 /* FalabellaProject */,
+				52663E7322D2708900D08990 /* FalabellaProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52663E5E22D2708800D08990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52663E6E22D2708900D08990 /* LaunchScreen.storyboard in Resources */,
+				52663E6B22D2708900D08990 /* Assets.xcassets in Resources */,
+				52663E8922D2745B00D08990 /* LoginViewController.xib in Resources */,
+				52663EBD22D2E60400D08990 /* DetailLocalViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52663E7222D2708900D08990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26B1E61E7A7E445798650B3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FalabellaProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		323B0E56DEE53DA2E0A4BF0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FalabellaProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EEBB2F21FA6997E08461B88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FalabellaProject/Pods-FalabellaProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FalabellaProject/Pods-FalabellaProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52663E5C22D2708800D08990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52663E9722D27DF200D08990 /* LocalsDelegate.swift in Sources */,
+				52663EB422D2AA3500D08990 /* LocalInformationCell.swift in Sources */,
+				52663E9522D27DE900D08990 /* LocalsDataSource.swift in Sources */,
+				52663E8822D2745B00D08990 /* LoginViewController.swift in Sources */,
+				52663E9322D27CF000D08990 /* ViewFactoryType.swift in Sources */,
+				52663EA422D286DE00D08990 /* LocalsPresenterProtocol.swift in Sources */,
+				52663EA222D286B500D08990 /* LocalsPresenter.swift in Sources */,
+				52663EAE22D298A700D08990 /* LocalRestApi.swift in Sources */,
+				52663EA922D2882900D08990 /* ErrorModel.swift in Sources */,
+				52663EB222D29C1100D08990 /* LocalServiceLocator.swift in Sources */,
+				52663EA622D2877E00D08990 /* ListLocalsUseCase.swift in Sources */,
+				52663E9022D27A7800D08990 /* ViewControllerFactory.swift in Sources */,
+				52663E8C22D278DE00D08990 /* LocalsViewController.swift in Sources */,
+				52663E6422D2708800D08990 /* AppDelegate.swift in Sources */,
+				52663EAB22D28B4C00D08990 /* LocalsView.swift in Sources */,
+				52663EBC22D2E60400D08990 /* DetailLocalViewController.swift in Sources */,
+				52663EB022D2994E00D08990 /* LocalAlamofireRestApi.swift in Sources */,
+				52663EA022D282B400D08990 /* LocalModel.swift in Sources */,
+				52663EB622D2D94200D08990 /* FilterLocalsUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52663E7022D2708900D08990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52663EC422D2F8B400D08990 /* LocalsDelegateTests.swift in Sources */,
+				52663ED122D3028C00D08990 /* ListLocalsUseCaseTests.swift in Sources */,
+				52663EC622D2FAE900D08990 /* LocalsPresenterTests.swift in Sources */,
+				52663ECC22D2FC1D00D08990 /* LocalRestApiMock.swift in Sources */,
+				52663EC922D2FB5300D08990 /* LocalsViewMock.swift in Sources */,
+				52663EC222D2F2FA00D08990 /* LocalsDataSourceTests.swift in Sources */,
+				52663ED622D3049B00D08990 /* LocalInformationCellTests.swift in Sources */,
+				52663ED322D3041100D08990 /* FilterLocalsUseCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52663E7622D2708900D08990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52663E5F22D2708800D08990 /* FalabellaProject */;
+			targetProxy = 52663E7522D2708900D08990 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52663E6C22D2708900D08990 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52663E6D22D2708900D08990 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52663E7B22D2708900D08990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52663E7C22D2708900D08990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52663E7E22D2708900D08990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A97A950C4A845D8F96EFC428 /* Pods-FalabellaProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZY8DHJ2ZU;
+				INFOPLIST_FILE = "$(SRCROOT)/FalabellaProject/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FalabellaProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52663E7F22D2708900D08990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FCACD01C29F67A7B6756790 /* Pods-FalabellaProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZY8DHJ2ZU;
+				INFOPLIST_FILE = "$(SRCROOT)/FalabellaProject/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FalabellaProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52663E8122D2708900D08990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B40A8B99F2C08AA6F2BA00 /* Pods-FalabellaProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZY8DHJ2ZU;
+				INFOPLIST_FILE = FalabellaProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FalabellaProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FalabellaProject.app/FalabellaProject";
+			};
+			name = Debug;
+		};
+		52663E8222D2708900D08990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F68BB71A59D5954DE3DC5095 /* Pods-FalabellaProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZY8DHJ2ZU;
+				INFOPLIST_FILE = FalabellaProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FalabellaProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FalabellaProject.app/FalabellaProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52663E5B22D2708800D08990 /* Build configuration list for PBXProject "FalabellaProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52663E7B22D2708900D08990 /* Debug */,
+				52663E7C22D2708900D08990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52663E7D22D2708900D08990 /* Build configuration list for PBXNativeTarget "FalabellaProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52663E7E22D2708900D08990 /* Debug */,
+				52663E7F22D2708900D08990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52663E8022D2708900D08990 /* Build configuration list for PBXNativeTarget "FalabellaProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52663E8122D2708900D08990 /* Debug */,
+				52663E8222D2708900D08990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52663E5822D2708800D08990 /* Project object */;
+}
